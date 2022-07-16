@@ -23,6 +23,20 @@ h3,
     font-size: 2.75rem;
     margin-bottom: 50px;
 }
+
+.btn-check:focus + .btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-check:active + .btn-light:focus,
+.btn-check:checked + .btn-light:focus,
+.btn-light.active:focus,
+.btn-light:active:focus,
+.show > .btn-light.dropdown-toggle:focus {
+    box-shadow: none;
+}
 /* ========================================
                 Header Style
 =========================================== */
@@ -82,14 +96,17 @@ header::before {
     left: 0;
     height: 100%;
     width: 100%;
-    background: #002b60;
-    opacity: 0.7;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 43, 96, 0.8),
+        rgba(0, 43, 96, 0.5)
+    );
     z-index: -1;
 }
 
 .hero h1 {
     color: #ffffff;
-    font-size: 3.4rem;
+    font-size: 3.2rem;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -97,11 +114,13 @@ header::before {
 
 .hero .btn {
     color: #002b60;
-    padding: 12px 28px;
+    font-size: 17px;
     font-weight: 500;
+    padding: 12px 28px;
 }
 
 .hero .btn-primary {
+    font-size: 17px;
     color: #fff !important;
     background-color: #00a5fe !important;
     border-color: #00a5fe !important;
@@ -148,7 +167,7 @@ header::before {
     height: 180px;
     width: 180px;
     transform: translate(50%, -50%);
-    transition: all 0.5s;
+    transition: all 0.4s;
     border-radius: 50%;
     opacity: 0;
     z-index: -1;
@@ -157,7 +176,7 @@ header::before {
 .services .item:hover::before {
     opacity: 1;
     transform: scale(3.5);
-    transition: all 0.5s;
+    transition: all 0.4s;
 }
 
 .services .item img {
@@ -173,4 +192,47 @@ header::before {
     line-height: 1.5;
     letter-spacing: 0.25px;
     margin: 0;
+}
+
+/* ========================================
+              Call to Action Style
+=========================================== */
+.call-to-action {
+    padding: 50px 0;
+    background-color: #002b60;
+}
+
+.call-to-action .group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.call-to-action .group h2 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 0.25px;
+    margin-bottom: 0;
+}
+
+.call-to-action .btn {
+    color: #002b60;
+    font-size: 17px;
+    padding: 12px 28px;
+    font-weight: 500;
+}
+
+/* ========================================
+              Speciality Style
+=========================================== */
+.speciality {
+    padding: 100px 0;
+}
+
+.speciality .item {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 20px;
 }

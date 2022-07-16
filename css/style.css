@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -7,9 +8,21 @@
 
 html,
 body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+.btn {
     font-family: 'Oswald', sans-serif;
 }
 
+.title {
+    color: #002b60;
+    font-size: 2.75rem;
+    margin-bottom: 50px;
+}
 /* ========================================
                 Header Style
 =========================================== */
@@ -92,4 +105,72 @@ header::before {
     color: #fff !important;
     background-color: #00a5fe !important;
     border-color: #00a5fe !important;
+}
+
+/* ========================================
+                Servies Style
+=========================================== */
+.services {
+    padding: 100px 0;
+    position: relative;
+    z-index: 0;
+}
+
+.services::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: #00a5fe;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+.services .item {
+    padding: 30px 20px;
+    background: #002b60;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.075);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.services .item::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    background: #00a5fe;
+    height: 180px;
+    width: 180px;
+    transform: translate(50%, -50%);
+    transition: all 0.5s;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: -1;
+}
+
+.services .item:hover::before {
+    opacity: 1;
+    transform: scale(3.5);
+    transition: all 0.5s;
+}
+
+.services .item img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.services .item h4 {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.25px;
+    margin: 0;
 }

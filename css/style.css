@@ -25,6 +25,13 @@ h3,
     margin-bottom: 50px;
 }
 
+.sub-title {
+    color: #002b60;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
 .btn-check:focus + .btn,
 .btn:focus {
     outline: 0;
@@ -443,4 +450,220 @@ footer p {
     font-weight: 300;
     letter-spacing: 0.5px;
     margin: 0;
+}
+
+/* ========================================
+                Responsive
+=========================================== */
+@media screen and (max-width: 991.98px) {
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    header::before {
+        width: 60%;
+        height: 800px;
+        border-radius: 10%;
+    }
+
+    .navbar-dark .navbar-toggler {
+        color: rgb(255, 255, 255);
+        border-color: #002b60;
+        background: #002b60;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        gap: 0;
+        margin: 10px 0;
+    }
+
+    .nav-link {
+        padding: 0.3rem 1rem;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+        font-weight: 600;
+    }
+
+    .title,
+    .requirement h2 {
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+
+    .sub-title {
+        font-size: 1.4rem;
+    }
+
+    .services .item h4 {
+        font-size: 17px;
+    }
+
+    .call-to-action .group h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .infos {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .infos p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    header::before {
+        width: 95%;
+        height: 770px;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .hero .btn {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    .hero {
+        max-height: 420px;
+    }
+
+    section {
+        padding: 70px 0 !important;
+    }
+
+    .services .d-flex,
+    .speciality .d-flex {
+        flex-direction: column;
+    }
+
+    .services .title,
+    .speciality .title {
+        margin-bottom: 15px;
+    }
+
+    .title,
+    .requirement h2,
+    .enquiry .title {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .sub-title {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .sub-title img {
+        height: 30px;
+    }
+
+    .speciality .sub-title img {
+        height: 24px;
+        margin-top: 5px;
+    }
+
+    .call-to-action {
+        padding: 50px 0 !important;
+    }
+
+    .call-to-action .group {
+        display: flex;
+        align-items: center;
+        justify-content: space-center;
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .call-to-action .group h2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .call-to-action .group h2 br {
+        display: none;
+    }
+
+    .call-to-action .btn {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    .speciality .item h5 {
+        font-size: 1rem;
+        text-align: center;
+        letter-spacing: 0.5px;
+        margin: 0;
+    }
+
+    .requirement li {
+        font-size: 16px;
+    }
+
+    .contact {
+        padding: 25px 25px 25px 25px;
+    }
+
+    .form-floating > label {
+        font-size: 14px;
+    }
+
+    .infos {
+        padding: 35px 25px 30px;
+    }
+
+    .infos h4 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .infos p {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 }

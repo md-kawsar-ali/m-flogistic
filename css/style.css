@@ -60,7 +60,7 @@ header::before {
 }
 
 .navbar-expand-lg .navbar-nav {
-    gap: 25px;
+    gap: 15px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -98,8 +98,8 @@ header::before {
     width: 100%;
     background: linear-gradient(
         90deg,
-        rgba(0, 43, 96, 0.8),
-        rgba(0, 43, 96, 0.5)
+        rgba(0, 43, 96, 0.9),
+        rgba(0, 43, 96, 0.4)
     );
     z-index: -1;
 }
@@ -132,6 +132,7 @@ header::before {
 .services {
     padding: 100px 0;
     position: relative;
+    background: #fefefe;
     z-index: 0;
 }
 
@@ -142,8 +143,7 @@ header::before {
     right: 0;
     height: 100%;
     width: 50%;
-    background: #00a5fe;
-    opacity: 0.15;
+    background: #ebf8ff;
     z-index: -1;
 }
 
@@ -229,10 +229,30 @@ header::before {
 =========================================== */
 .speciality {
     padding: 100px 0;
+    position: relative;
+    background: #fefefe;
+    z-index: 0;
+}
+
+.speciality::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: #ebf8ff;
+    z-index: -1;
 }
 
 .speciality .item {
-    background: #fafafa;
+    color: #ffffff;
+    background: #002b60;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 25px;
+}
+
+.speciality .item h5 {
+    margin: 0;
+    letter-spacing: 0.5px;
 }

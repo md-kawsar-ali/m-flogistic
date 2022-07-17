@@ -9,6 +9,7 @@
 html,
 body {
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -255,4 +256,191 @@ header::before {
 .speciality .item h5 {
     margin: 0;
     letter-spacing: 0.5px;
+}
+
+/* ========================================
+                Requirement
+=========================================== */
+.requirement {
+    padding: 100px 0;
+    background: #002b60 url('../img/bg.jpg') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+
+.requirement::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 43, 96, 1),
+        rgba(0, 43, 96, 0.9),
+        rgba(0, 43, 96, 0.8),
+        rgba(0, 43, 96, 0.6)
+    );
+    z-index: -1;
+}
+
+.requirement h2 {
+    color: #ffffff;
+    font-size: 2.75rem;
+    margin-bottom: 25px;
+}
+
+.requirement ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.requirement li {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.requirement li::before {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    content: '';
+    height: 20px;
+    width: 24px;
+    background: url('../img/icons/check.png') no-repeat 0 0;
+    background-size: contain;
+}
+
+/* ========================================
+                Contact
+=========================================== */
+.enquiry {
+    padding: 115px 0 100px;
+}
+
+.enquiry .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact {
+    padding: 35px 35px 30px 35px;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.075);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.contact .form-control {
+    color: #002b60;
+    font-weight: 300;
+    letter-spacing: 1px;
+    background: transparent;
+    border-radius: 2px;
+}
+
+.contact label {
+    color: #1b5192;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.contact button {
+    padding: 12px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    border: none;
+    background: #002b60;
+    transition: all 0.3s;
+}
+
+.contact button:hover {
+    background: #00a5fe;
+    transition: all 0.3s;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext {
+    padding: 0.75rem;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext,
+.form-floating > .form-select {
+    height: 3rem;
+    line-height: 1.25;
+}
+
+.form-floating > label {
+    padding: 0.75rem;
+}
+
+.form-control:focus {
+    color: #002b60;
+    background-color: transparent;
+    border-color: rgba(0, 43, 96, 0.5);
+    outline: 0;
+    box-shadow: none;
+}
+
+.infos {
+    color: #fafafa;
+    background: #002b60;
+    padding: 50px 45px;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.infos a {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.infos h4 {
+    font-size: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.infos p {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.infos strong {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* ========================================
+                Footer
+=========================================== */
+footer {
+    padding: 32px 0;
+    background: #002b60;
+    text-align: center;
+}
+
+footer p {
+    color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin: 0;
 }

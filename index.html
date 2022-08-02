@@ -239,6 +239,8 @@
                                     <input type="text" name="name" class="form-control" id="name" placeholder="name"
                                         required>
                                     <label for="floatingName">Name *</label>
+
+                                    <span id="name-error"></span>
                                 </div>
                             </div>
 
@@ -247,6 +249,8 @@
                                     <input type="tel" class="form-control" name="phone" id="phone"
                                         placeholder="555-555-5555" required>
                                     <label for="phone">Phone Number *</label>
+
+                                    <span id="phone-error"></span>
                                 </div>
                             </div>
                         </div>
@@ -255,12 +259,16 @@
                             <input type="email" class="form-control" name="email" id="email"
                                 placeholder="name@example.com" required>
                             <label for="email">Email address *</label>
+
+                            <span id="email-error"></span>
                         </div>
 
                         <div class="form-floating mb-3">
                             <textarea class="form-control" placeholder="Write your message here" name="message"
                                 id="message" style="height: 100px" required></textarea>
                             <label for="message">Message *</label>
+
+                            <span id="message-error"></span>
                         </div>
 
                         <button onclick="sendMail()" class="btn btn-dark w-100">Send Message</button>

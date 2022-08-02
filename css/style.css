@@ -403,6 +403,13 @@ header::before {
     box-shadow: none;
 }
 
+.contact span {
+    font-size: 16px;
+    color: #f00000;
+    margin-top: 5px;
+    display: none;
+}
+
 .infos {
     color: #fafafa;
     background: #002b60;
